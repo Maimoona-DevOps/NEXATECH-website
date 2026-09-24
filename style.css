@@ -488,3 +488,358 @@ body {
 
   transition:
     transform 0.
+    /* =========================================================
+   NEXATECH — PROFESSIONAL START HERE SECTION
+   ========================================================= */
+
+.guide-section {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+
+  background:
+    radial-gradient(
+      circle at 8% 15%,
+      rgba(15, 118, 110, 0.08),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 92% 85%,
+      rgba(242, 140, 40, 0.07),
+      transparent 25%
+    ),
+    #f8fafc;
+}
+
+
+/* subtle background grid */
+
+.guide-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(15, 118, 110, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(15, 118, 110, 0.035) 1px,
+      transparent 1px
+    );
+
+  background-size: 55px 55px;
+
+  pointer-events: none;
+}
+
+
+.guide-section .wrap {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ---------- SECTION HEADING ---------- */
+
+.guide-section .section-heading {
+  max-width: 760px;
+  margin-bottom: 50px;
+}
+
+
+.guide-section .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #0f766e;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+}
+
+
+.guide-section .eyebrow::before {
+  content: "";
+
+  width: 28px;
+  height: 2px;
+
+  background: #f28c28;
+
+  border-radius: 10px;
+}
+
+
+.guide-section h2 {
+  margin-top: 12px;
+  margin-bottom: 15px;
+
+  color: #102a43;
+
+  font-size: clamp(
+    2rem,
+    4vw,
+    3rem
+  );
+
+  letter-spacing: -0.035em;
+}
+
+
+.guide-section .section-heading > p:not(.eyebrow) {
+  max-width: 650px;
+
+  color: #64748b;
+
+  font-size: 1.08rem;
+
+  line-height: 1.7;
+}
+
+
+/* ---------- CARDS ---------- */
+
+.guide-grid {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+
+.guide-card {
+  position: relative;
+
+  min-height: 280px;
+
+  padding: 32px;
+
+  border: 1px solid #dce6eb;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f8fbfc
+    );
+
+  box-shadow:
+    0 10px 30px rgba(16,42,67,0.05);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+/* orange top line */
+
+.guide-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #0f766e,
+      #6ee7d8,
+      #f28c28
+    );
+
+  opacity: 0.9;
+}
+
+
+/* soft glow */
+
+.guide-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 130px;
+  height: 130px;
+
+  right: -70px;
+  bottom: -70px;
+
+  border-radius: 50%;
+
+  background: rgba(15,118,110,0.07);
+
+  transition: transform 0.3s ease;
+}
+
+
+.guide-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(15,118,110,0.25);
+
+  box-shadow:
+    0 22px 45px rgba(16,42,67,0.10);
+}
+
+
+.guide-card:hover::after {
+  transform: scale(1.5);
+}
+
+
+/* ---------- NUMBER ICON ---------- */
+
+.guide-card .icon {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+
+  width: 52px;
+  height: 52px;
+
+  margin-bottom: 24px;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(15,118,110,0.12);
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e6f7f5,
+      #f3fbfa
+    );
+
+  color: #0f766e;
+
+  font-family:
+    'Bricolage Grotesque',
+    system-ui,
+    sans-serif;
+
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  box-shadow:
+    0 8px 20px rgba(15,118,110,0.08);
+}
+
+
+/* ---------- CARD TEXT ---------- */
+
+.guide-card h3 {
+  position: relative;
+  z-index: 2;
+
+  margin-bottom: 12px;
+
+  color: #102a43;
+
+  font-size: 1.35rem;
+
+  letter-spacing: -0.02em;
+}
+
+
+.guide-card p {
+  position: relative;
+  z-index: 2;
+
+  margin-bottom: 25px;
+
+  color: #64748b;
+
+  line-height: 1.7;
+}
+
+
+.guide-card span {
+  position: relative;
+  z-index: 2;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #0f766e;
+
+  font-size: 0.94rem;
+  font-weight: 700;
+
+  transition: gap 0.2s ease;
+}
+
+
+.guide-card span::after {
+  content: "→";
+
+  color: #f28c28;
+}
+
+
+.guide-card:hover span {
+  gap: 11px;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 800px) {
+
+  .guide-section {
+    padding: 80px 0;
+  }
+
+  .guide-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .guide-section {
+    padding: 65px 0;
+  }
+
+  .guide-section .section-heading {
+    margin-bottom: 35px;
+  }
+
+  .guide-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .guide-card {
+    min-height: auto;
+    padding: 28px;
+  }
+
+}
