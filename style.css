@@ -1114,3 +1114,7 @@ footer{
     min-height:320px;
   }
 }
+section.guide-section {
+  background: #dff5f1 !important;
+  background-image: none !important;
+}
