@@ -1,16 +1,524 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>NEXATECH – Become a job-ready DevOps engineer</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap"><link rel="stylesheet" href="/style.css"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body>
-<nav><div class="wrap"><p class="logo">NEXATECH</p><div><a href="/#roadmap">Roadmap</a><a href="/ebook.html">E-book</a></div></div></nav>
-<header class="wrap" style="padding:64px 20px 24px"><h1>From beginner to job-ready DevOps engineer, one clear path.</h1>
-<p style="max-width:34em;color:var(--mut)">Free guides for freshers and upcoming engineers. Start with the intro and roadmap below, then pick up the full e-book when you are ready.</p>
-<a class="btn" href="#intro">Start free</a> &nbsp; <a href="/ebook.html">See the e-book</a></header>
-<section id="intro"><div class="wrap"><h2>Free guide 1: Why DevOps?</h2><div class="grid">
-<div class="box"><h3>What it is</h3><p>DevOps connects writing software with running it: automated builds, tests, releases and monitoring, so teams ship faster and safer.</p></div>
-<div class="box"><h3>Why companies hire for it</h3><p>Every company that ships software needs people who can automate deployments and keep systems reliable. Cloud adoption keeps that need growing.</p></div>
-<div class="box"><h3>Why it suits beginners</h3><p>You can start with Linux and Git, build small projects, and grow step by step into cloud and containers.</p></div></div></div></section>
-<section id="roadmap" style="background:#fff"><div class="wrap"><h2>Free guide 2: The DevOps roadmap</h2>
-<ol class="pipe"><li>Linux basics</li><li>Git and GitHub</li><li>Networking basics</li><li>Cloud (AWS)</li><li>CI/CD pipelines</li><li>Docker</li><li>Kubernetes</li><li>Terraform</li><li>Monitoring</li></ol>
-<p style="color:var(--mut)">Learn in this order. Each stage adds one skill employers ask for.</p></div></section>
-<section><div class="wrap"><h2>The DevOps Engineer E-book</h2><div class="box"><p>Everything in the roadmap, explained for beginners, with a cheat sheet, interview preparation and a hands-on project included.</p><a class="btn" href="/ebook.html">View e-book</a></div></div></section>
-<section style="padding-top:0"><div class="wrap"><h2>Coming soon</h2><div class="grid">
-<div class="box soon"><h3>Cloud Engineer</h3></div><div class="box soon"><h3>SRE Engineer</h3></div><div class="box soon"><h3>Network Engineer</h3></div><div class="box soon"><h3>AI-Powered DevOps Engineer</h3><p>Launching 1 January 2027</p></div></div></div></section>
-<footer><div class="wrap">NEXATECH by PS Academy · Made in India</div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>NEXATECH – Become a Job-Ready DevOps Engineer</title>
+
+  <meta
+    name="description"
+    content="NEXATECH helps beginners follow a clear path to become job-ready DevOps engineers."
+  >
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap"
+  >
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+  <nav>
+    <div class="wrap nav-inner">
+
+      <a class="logo" href="/">NEXATECH</a>
+
+      <div class="nav-links">
+        <a href="/#intro">Why DevOps</a>
+        <a href="/#roadmap">Roadmap</a>
+        <a href="/ebook.html">E-book</a>
+        <a class="nav-btn" href="/#intro">Start Free</a>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- =========================
+       HERO SECTION
+  ========================== -->
+
+  <header class="hero">
+
+    <div class="wrap hero-inner">
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          NEXATECH · DEVOPS LEARNING
+        </p>
+
+        <h1>
+          From beginner to
+          <span>job-ready DevOps engineer.</span>
+        </h1>
+
+        <p class="hero-text">
+          One clear path for freshers and aspiring engineers.
+          Learn Linux, Git, Cloud, CI/CD, Docker, Kubernetes,
+          Terraform and Monitoring step by step.
+        </p>
+
+        <div class="hero-actions">
+
+          <a class="btn" href="#intro">
+            Start Free
+          </a>
+
+          <a class="hero-link" href="/ebook.html">
+            Explore the E-book →
+          </a>
+
+        </div>
+
+        <div class="hero-points">
+          <span>✓ Beginner friendly</span>
+          <span>✓ Practical roadmap</span>
+          <span>✓ Job focused</span>
+        </div>
+
+      </div>
+
+
+      <div class="hero-card">
+
+        <p class="card-label">
+          1 YEAR PATH
+        </p>
+
+        <h3>
+          DevOps Engineer
+        </h3>
+
+        <p>
+          Learn → Build → Practice → Get Job Ready
+        </p>
+
+        <div class="mini-progress">
+          <span></span>
+        </div>
+
+        <div class="hero-stats">
+
+          <div>
+            <strong>9</strong>
+            <small>Core skills</small>
+          </div>
+
+          <div>
+            <strong>1</strong>
+            <small>Clear path</small>
+          </div>
+
+          <div>
+            <strong>∞</strong>
+            <small>Practice</small>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       WHY DEVOPS
+  ========================== -->
+
+  <section id="intro" class="guide-section">
+
+    <div class="wrap">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          START HERE
+        </p>
+
+        <h2>
+          Why learn DevOps?
+        </h2>
+
+        <p>
+          Understand the role, the opportunity, and why beginners
+          can build their career step by step.
+        </p>
+
+      </div>
+
+
+      <div class="grid guide-grid">
+
+
+        <div class="box guide-card">
+
+          <div class="icon">
+            01
+          </div>
+
+          <h3>
+            What is DevOps?
+          </h3>
+
+          <p>
+            DevOps connects software development and operations
+            through automation, continuous delivery, testing and monitoring.
+          </p>
+
+          <span>
+            Build the foundation →
+          </span>
+
+        </div>
+
+
+        <div class="box guide-card">
+
+          <div class="icon">
+            02
+          </div>
+
+          <h3>
+            Why companies need it
+          </h3>
+
+          <p>
+            Modern teams need reliable deployments, cloud infrastructure
+            and automation to deliver software efficiently.
+          </p>
+
+          <span>
+            Understand the industry →
+          </span>
+
+        </div>
+
+
+        <div class="box guide-card">
+
+          <div class="icon">
+            03
+          </div>
+
+          <h3>
+            Why beginners can start
+          </h3>
+
+          <p>
+            Start with Linux and Git, build small projects and gradually
+            move into cloud, CI/CD and containers.
+          </p>
+
+          <span>
+            Start step by step →
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       DEVOPS ROADMAP
+  ========================== -->
+
+  <section id="roadmap" class="roadmap-section">
+
+    <div class="wrap">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          YOUR LEARNING PATH
+        </p>
+
+        <h2>
+          The DevOps roadmap
+        </h2>
+
+        <p>
+          Follow the path in order. Build your foundation first,
+          then move into cloud, automation and modern infrastructure.
+        </p>
+
+      </div>
+
+
+      <div class="roadmap-grid">
+
+
+        <div class="roadmap-card">
+          <span>01</span>
+          <h3>Linux Basics</h3>
+          <p>
+            Commands, files, permissions and processes.
+          </p>
+        </div>
+
+
+        <div class="roadmap-card">
+          <span>02</span>
+          <h3>Git &amp; GitHub</h3>
+          <p>
+            Version control, branches and collaboration.
+          </p>
+        </div>
+
+
+        <div class="roadmap-card">
+          <span>03</span>
+          <h3>Networking</h3>
+          <p>
+            HTTP, DNS, IP addresses and networking basics.
+          </p>
+        </div>
+
+
+        <div class="roadmap-card">
+          <span>04</span>
+          <h3>Cloud — AWS</h3>
+          <p>
+            Core cloud concepts and AWS services.
+          </p>
+        </div>
+
+
+        <div class="roadmap-card">
+          <span>05</span>
+          <h3>CI/CD</h3>
+          <p>
+            Automate testing, builds and deployments.
+          </p>
+        </div>
+
+
+        <div class="roadmap-card">
+          <span>06</span>
+          <h3>Docker</h3>
+          <p>
+            Containers, images and application deployment.
+          </p>
+        </div>
+
+
+        <div class="roadmap-card">
+          <span>07</span>
+          <h3>Kubernetes</h3>
+          <p>
+            Container orchestration and scalable workloads.
+          </p>
+        </div>
+
+
+        <div class="roadmap-card">
+          <span>08</span>
+          <h3>Terraform</h3>
+          <p>
+            Infrastructure as Code and automation.
+          </p>
+        </div>
+
+
+        <div class="roadmap-card">
+          <span>09</span>
+          <h3>Monitoring</h3>
+          <p>
+            Logs, metrics, alerts and system visibility.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="roadmap-note">
+
+        <strong>Tip:</strong>
+
+        Don't try to learn everything at once.
+        Master one stage, build something with it,
+        then move to the next.
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       E-BOOK SECTION
+  ========================== -->
+
+  <section class="ebook-section">
+
+    <div class="wrap ebook-wrap">
+
+      <div class="ebook-content">
+
+        <p class="eyebrow">
+          GO DEEPER
+        </p>
+
+        <h2>
+          The DevOps Engineer E-book
+        </h2>
+
+        <p>
+          Everything in the roadmap, explained for beginners,
+          with a cheat sheet, interview preparation and a
+          hands-on project included.
+        </p>
+
+        <a class="btn" href="/ebook.html">
+          View E-book
+        </a>
+
+      </div>
+
+
+      <div class="ebook-card">
+
+        <div class="ebook-cover">
+
+          <span>
+            NEXATECH
+          </span>
+
+          <strong>
+            DEVOPS
+            <br>
+            ENGINEER
+          </strong>
+
+          <small>
+            Beginner → Job Ready
+          </small>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       COMING SOON
+  ========================== -->
+
+  <section class="coming-section">
+
+    <div class="wrap">
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          MORE PATHS COMING
+        </p>
+
+        <h2>
+          Build your next career path
+        </h2>
+
+        <p>
+          More engineering learning paths are coming to NEXATECH.
+        </p>
+
+      </div>
+
+
+      <div class="grid coming-grid">
+
+
+        <div class="box soon">
+          <span class="coming-number">01</span>
+          <h3>
+            Cloud Engineer
+          </h3>
+          <p>
+            Coming soon
+          </p>
+        </div>
+
+
+        <div class="box soon">
+          <span class="coming-number">02</span>
+          <h3>
+            SRE Engineer
+          </h3>
+          <p>
+            Coming soon
+          </p>
+        </div>
+
+
+        <div class="box soon">
+          <span class="coming-number">03</span>
+          <h3>
+            Network Engineer
+          </h3>
+          <p>
+            Coming soon
+          </p>
+        </div>
+
+
+        <div class="box soon featured-soon">
+          <span class="coming-number">04</span>
+          <h3>
+            AI-Powered DevOps Engineer
+          </h3>
+          <p>
+            Launching 1 January 2027
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="wrap footer-inner">
+
+      <div>
+        <strong>NEXATECH</strong>
+        <p>
+          Learn. Build. Deploy.
+        </p>
+      </div>
+
+      <div>
+        NEXATECH by PS Academy · Made in India
+      </div>
+
+    </div>
+
+  </footer>
+
+
+</body>
+</html>
